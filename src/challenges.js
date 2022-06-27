@@ -38,20 +38,18 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-let arrayTest = ['nao','contavam','com','minha','astucia']
-console.log(concatName(arrayTest));
-
 function concatName(array = []) {
   // seu código aqui
-  //array = (typeof array !== 'indefined') ? array : [];
+  array = (typeof array !== 'indefined') ? array : [];
   
   let temp = array.length-1;
   return array[temp] + ', ' + array[0];
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins,ties) {
   // seu código aqui
+  return (wins*3)+ties;
 }
 
 // Desafio 6
