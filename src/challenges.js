@@ -69,13 +69,25 @@ function highestCount(array = []) {
       contNumber += 1;
     }
   }
-  
+
   return contNumber;
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let distanceCat1 = (mouse > cat1 === true) ? mouse - cat1 : cat1 - mouse;
+  let distanceCat2 = (mouse > cat2 === true) ? mouse - cat2 : cat2 - mouse;
+
+  if (distanceCat1 === distanceCat2) {
+    return 'os gatos trombam e o rato foge'
+  } else if (distanceCat1 < distanceCat2) {
+    return 'cat1';
+  } else {
+    return 'cat2';
+  }
+
+  return cont;
 }
 
 // Desafio 8
