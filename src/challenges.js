@@ -86,8 +86,6 @@ function catAndMouse(mouse, cat1, cat2) {
   } else {
     return 'cat2';
   }
-
-  return cont;
 }
 
 // Desafio 8
