@@ -41,20 +41,36 @@ function splitSentence(frase) {
 function concatName(array = []) {
   // seu código aqui
   array = (typeof array !== 'indefined') ? array : [];
-  
-  let temp = array.length-1;
+
+  let temp = array.length - 1;
   return array[temp] + ', ' + array[0];
 }
 
 // Desafio 5
-function footballPoints(wins,ties) {
+function footballPoints(wins, ties) {
   // seu código aqui
-  return (wins*3)+ties;
+  return (wins * 3) + ties;
 }
 
+
+
 // Desafio 6
-function highestCount() {
+function highestCount(array = []) {
   // seu código aqui
+  let contNumber = 0;
+  let numbTemp = array[0];
+
+  for (let index in array) {
+    if (array[index] > numbTemp) {
+      numbTemp = array[index];
+      console.log(array[index])
+      contNumber = 1;
+    } else if (array[index] === numbTemp) {
+      contNumber += 1;
+    }
+  }
+  
+  return contNumber;
 }
 
 // Desafio 7
