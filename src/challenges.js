@@ -2,9 +2,9 @@
 function compareTrue(paramero1, parametro2) {
   // seu código aqui
 
-  if(paramero1 === true && parametro2 === true){
+  if (paramero1 === true && parametro2 === true) {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
@@ -12,12 +12,29 @@ function compareTrue(paramero1, parametro2) {
 // Desafio 2
 function calcArea(base, altura) {
   // seu código aqui
-  return (base*altura)/2;
+  return (base * altura) / 2; n
 }
 
+
 // Desafio 3
-function splitSentence() {
+function splitSentence(frase) {
   // seu código aqui
+  frase = (typeof frase != 'undefined') ? frase : false;
+  let wordTemp = '';
+  let arrayTemp = [];
+  for (index in frase) {
+
+    if (frase[index] != ' ') {
+      wordTemp += frase[index];
+    } else {
+      arrayTemp.push(wordTemp);
+      wordTemp = '';
+    }
+  }
+  arrayTemp.push(wordTemp);
+  wordTemp = '';
+
+  return arrayTemp;
 }
 
 // Desafio 4
