@@ -2,9 +2,9 @@
 function compareTrue(paramero1, parametro2) {
   // seu código aqui
 
-  if (paramero1 === true && parametro2 === true) {
+  if(paramero1 === true && parametro2 === true){
     return true;
-  } else {
+  }else{
     return false;
   }
 }
@@ -12,7 +12,7 @@ function compareTrue(paramero1, parametro2) {
 // Desafio 2
 function calcArea(base, altura) {
   // seu código aqui
-  return (base * altura) / 2;
+  return (base*altura)/2;
 }
 
 // Desafio 3
