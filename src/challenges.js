@@ -157,9 +157,6 @@ function decode(frase) {
 }
 
 // Desafio 10
-
-//techList(['java', 'c++', 'python', 'dart', 'javacript'], 'lucao');
-
 function techList(array = [], people) {
   // seu código aqui
 
@@ -176,7 +173,6 @@ function techList(array = [], people) {
   }
 
   return arrayObjects;
-  console.log(arrayObjects);
 }
 
 module.exports = {
