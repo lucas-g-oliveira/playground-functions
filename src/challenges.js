@@ -89,16 +89,71 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(array = []) {
   // seu código aqui
+  let newArray = [];
+
+  for (data of array) {
+    if (data % 5 == 0 && data % 3 == 0) {
+      newArray.push('fizzBuzz')
+    } else if (data % 3 == 0) {
+      newArray.push('fizz')
+    } else if (data % 5 == 0) {
+      newArray.push('buzz');
+    } else {
+      newArray.push('bug!')
+    }
+  }
+  return newArray;
 }
 
 // Desafio 9
-function encode() {
+
+function encode(frase) {
   // seu código aqui
+  let encripted = '';
+  let objectKeyEncode = {
+    a: '1',
+    e: '2',
+    i: '3',
+    o: '4',
+    u: '5',
+  }
+
+  for (dataFrase of frase) {
+    encripted += (objectKeyEncode[dataFrase] == undefined) ? dataFrase : objectKeyEncode[dataFrase];
+  }
+
+  return encripted;
 }
-function decode() {
-  // seu código aqui
+
+function decode(frase) {
+  let dencripted = '';
+
+  let objectKeyEncode = {
+    a: '1',
+    e: '2',
+    i: '3',
+    o: '4',
+    u: '5',
+  }
+  let objectKeyDecript = {}
+
+  let tempNum = 0;
+  for (key in objectKeyEncode) {
+    let tempKey = '';
+
+    tempNum += 1;
+    tempKey += tempNum;
+    objectKeyDecript[tempKey] = key;
+    tempKey = '';
+  }
+
+  for (dataFrase of frase) {
+    dencripted += (objectKeyDecript[dataFrase] == undefined)? dataFrase : objectKeyDecript[dataFrase];
+  }
+
+  return dencripted;
 }
 
 // Desafio 10
