@@ -150,15 +150,33 @@ function decode(frase) {
   }
 
   for (dataFrase of frase) {
-    dencripted += (objectKeyDecript[dataFrase] == undefined)? dataFrase : objectKeyDecript[dataFrase];
+    dencripted += (objectKeyDecript[dataFrase] == undefined) ? dataFrase : objectKeyDecript[dataFrase];
   }
 
   return dencripted;
 }
 
 // Desafio 10
-function techList() {
+
+//techList(['java', 'c++', 'python', 'dart', 'javacript'], 'lucao');
+
+function techList(array = [], people) {
   // seu código aqui
+
+  if(array.length == 0 || people == undefined){
+    return 'Vazio!';
+  }
+  if (array.length == 5){
+    array = array.sort();
+  }
+    let arrayObjects = [];
+
+  for (data of array) {
+    arrayObjects.push({ tech: data, name: people })
+  }
+
+  return arrayObjects;
+  console.log(arrayObjects);
 }
 
 module.exports = {
