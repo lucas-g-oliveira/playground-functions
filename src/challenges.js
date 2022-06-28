@@ -108,17 +108,17 @@ function fizzBuzz(array = []) {
 }
 
 // Desafio 9
+let objectKeyEncode = {
+  a: '1',
+  e: '2',
+  i: '3',
+  o: '4',
+  u: '5',
+};
 
 function encode(frase) {
   // seu código aqui
   let encripted = '';
-  let objectKeyEncode = {
-    a: '1',
-    e: '2',
-    i: '3',
-    o: '4',
-    u: '5',
-  }
 
   for (dataFrase of frase) {
     encripted += (objectKeyEncode[dataFrase] == undefined) ? dataFrase : objectKeyEncode[dataFrase];
@@ -129,14 +129,6 @@ function encode(frase) {
 
 function decode(frase) {
   let dencripted = '';
-
-  let objectKeyEncode = {
-    a: '1',
-    e: '2',
-    i: '3',
-    o: '4',
-    u: '5',
-  }
   let objectKeyDecript = {}
 
   let tempNum = 0;
@@ -146,7 +138,6 @@ function decode(frase) {
     tempNum += 1;
     tempKey += tempNum;
     objectKeyDecript[tempKey] = key;
-    tempKey = '';
   }
 
   for (dataFrase of frase) {
