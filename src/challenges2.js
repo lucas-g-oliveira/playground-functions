@@ -14,9 +14,9 @@ function generatePhoneNumber(arrayNumbers = []) {
   for (value of arrayNumbers) {
     let contTemp = 0;
     for (number of arrayNumbers) {
-      contTemp += (value === number) ? 1: 0;
+      contTemp += (value === number) ? 1 : 0;
     }
-  
+
     if (value < 0 || value > 9 || contTemp >= 3) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
@@ -30,8 +30,13 @@ function generatePhoneNumber(arrayNumbers = []) {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  return (
+    (lineA < (lineB + lineC)) &&
+    (lineB < (lineA + lineC)) &&
+    (lineC < (lineC + lineB))
+  )
 }
 
 // Desafio 13
