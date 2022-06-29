@@ -40,8 +40,19 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(frase) {
   // seu código aqui
+  let glassesOfWater = 0;
+
+  for (glasse of frase) {
+    for (let index = 0; index <= 9; index += 1) {
+      if (glasse == index) {
+        glassesOfWater += index;
+        break;
+      }
+    }
+  }
+  return (glassesOfWater === 1) ? glassesOfWater + ' copo de água' : glassesOfWater + ' copos de água';
 }
 
 module.exports = {
