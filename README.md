@@ -44,9 +44,9 @@ Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua cr
 ## Créditos:
 
 
-- Desenvolvido por mim. </br> A implementação das funções requeridas acima e, README.
+- Desenvolvido por mim: </br> A implementação das funções requeridas acima e, README.
 
-- Desenvolvido pela Trybe. </br> Todos os demais arquivos testes e etc
+- Desenvolvido pela Trybe: </br> Todos os demais arquivos testes e etc
 
 
 <!-- ## Preview:
